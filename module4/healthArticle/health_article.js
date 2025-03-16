@@ -1,6 +1,9 @@
+/* This code below creates a new instance of XMLHttpRequest, which is an 
+API used to send HTTP requests and receive responses from server.
+This will help in retrieving the JSON data. */
 var xhr = new XMLHttpRequest();
 
-var url = './health_article.json'; 
+var url = './health_article.json'; // specifies the location of the JSON file that contains the health articles
 
 
 /* 
@@ -9,7 +12,8 @@ The open method configures an XHR request with the following parameters:
 'GET': Specifies the HTTP method used for the request (in this case, a GET request).
 URL: Represents the URL from where you will fetch the data.
 True: Indicates if the request is asynchronous (true) or synchronous (false). 
-In this case, it's set to true for asynchronous operation, allowing other scripts to run while the request is processed.
+In this case, it's set to true for asynchronous operation, allowing other 
+scripts to run while the request is processed.
 */
 xhr.open('GET', url, true);
 
